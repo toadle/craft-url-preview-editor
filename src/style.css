@@ -1,0 +1,25 @@
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: '.9375rem';
+}
+
+label {
+  display: block;
+  font-size: '.6875rem';
+  text-transform: uppercase;
+  color-scheme: light;
+  color: '#A2A3A4';
+}
+
+img.coverImage {
+  border-radius: 8px;
+  max-width: 100%;
+}
+
+.urlBlockItem {
+  /* @apply rounded-sm shadow mb-2 relative bg-groupBackground dark:bg-groupBackground-dark p-3 text-text dark:text-text-dark; */
+}
