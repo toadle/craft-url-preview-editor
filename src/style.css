@@ -3,21 +3,90 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "San Francisco Pro", sans-serif;
   font-size: '.9375rem';
+  padding: 0 8px;
+}
+
+.form-element {
+  display: block;
+} 
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mr-1 {
+  margin-right: 1rem;
 }
 
 label {
   display: block;
-  font-size: '.6875rem';
+  font-size: .6875rem;
+  font-weight: bold;
   text-transform: uppercase;
   color-scheme: light;
-  color: '#A2A3A4';
+  color: #A2A3A4;
+}
+input {
+  display: block;
+  border: 1px solid #F1F1F2;
+  background-color: #F8F8F8;
+  border-radius: 4px;
+  padding: 4px;
+  color: #3D3D3D;
+  width: 100%;
+  box-sizing: border-box; 
+}
+input[disabled] {
+  border-color: #F8F8F8;
+  color: #A2A3A4;
 }
 
 img.coverImage {
-  border-radius: 8px;
-  max-width: 100%;
+  border-radius: 4px;
+  width: 100%;
+  height: 175px;
+  object-fit: cover;
+}
+
+div.suggestionImages {
+  margin-top: 8px;
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+
+img.suggestionImage {
+  border-radius: 4px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  object-fit: cover;
+  margin-right: 8px;
+  border: 1px solid #F1F1F2;
+}
+
+@media (prefers-color-scheme: dark) {
+  label {
+    color: #7F7F7F;
+  }
+  input {
+    background-color: #252525;
+    border-color: #353535;
+    color: #DFDFDF;
+  }
+  input[disabled] {
+    color: #5E5E5E;
+    border-color: #252525;
+    background-color: #252525;
+  }
+  img.suggestionImage {
+    border-color: #353535;
+  }
 }
 
 .urlBlockItem {

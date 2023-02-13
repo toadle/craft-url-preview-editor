@@ -14,8 +14,10 @@
       "dom",
       "esnext"
     ],
+    "types": ["node"],
     "typeRoots": [
-      "./node_modules/@craftdocs/craft-extension-api"
+      "./node_modules/@craftdocs/craft-extension-api",
+      "./node_modules/@types"
     ]
   },
   "exclude": ["node_modules"]
